@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import "./cssGlobal/styles.css";
+import PseudoBody from "./components/General/PseudoBody";
+import HeaderContainer from "./components/Header/HeaderContainer";
+import SectionRegisterForm from "./components/Section/Register/SectionRegisterForm";
+import SectionLoginForm from "./components/Section/Register/SectionLoginForm";
+import SectionProductPanel from "./components/Section/Products/SectionProductPanel";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
+  
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PseudoBody>
+      <HeaderContainer></HeaderContainer>
+      <Routes>
+        <Route path="/" Component={SectionProductPanel}></Route>
+        <Route path="/home" Component={SectionProductPanel}></Route>
+        <Route path="/registrarse" Component={SectionRegisterForm}></Route>
+        <Route path="/ingresar" Component={SectionLoginForm}></Route>
+      </Routes>
+    </PseudoBody>
   );
 }
 
