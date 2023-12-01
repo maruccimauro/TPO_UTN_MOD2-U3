@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TPO_UTN_MOD2_U3/static/css/main.ee1b25b1.css",
+    "main.js": "/TPO_UTN_MOD2_U3/static/js/main.d7528943.js",
+    "static/js/787.d4aba7ab.chunk.js": "/TPO_UTN_MOD2_U3/static/js/787.d4aba7ab.chunk.js",
+    "index.html": "/TPO_UTN_MOD2_U3/index.html",
+    "main.ee1b25b1.css.map": "/TPO_UTN_MOD2_U3/static/css/main.ee1b25b1.css.map",
+    "main.d7528943.js.map": "/TPO_UTN_MOD2_U3/static/js/main.d7528943.js.map",
+    "787.d4aba7ab.chunk.js.map": "/TPO_UTN_MOD2_U3/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee1b25b1.css",
+    "static/js/main.d7528943.js"
+  ]
+}
