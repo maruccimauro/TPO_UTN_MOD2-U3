@@ -33,7 +33,7 @@ const departmentOptions = [
   "Moda Mujeres",
 ];
 
-const items = departmentOptions.map((item) => <option className="departmentOptions"> ➡️{item} </option>);
+const items = departmentOptions.map((item,index) => <option key={index} className="departmentOptions"> ➡️{item} </option>);
 
 return(
     <Fragment>

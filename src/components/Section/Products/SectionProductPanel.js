@@ -7,24 +7,25 @@ import Image from "../../General/Image";
 
 export default function SectionProductPanel() {
   const [sell, setSell] = useState(false);
+   console.log("hola mundo");
   const { filesData, leyend, aboutProduct, productPropsData } =
     DataSectionProductsProduct;
   const [selectImage, setSelectImage] = useState(filesData[0]);
-  
 
-  const files = filesData.map((file) => (
+  const files = filesData.map((file, index) => (
     <MiniatureImageProduct
+      key={index}
       file={file}
       onMouseOver={() => {
         setSelectImage(file);
       }}
-      
     ></MiniatureImageProduct>
   ));
 
-  const productProps = productPropsData.map((productProp) => (
-    <p class="productPropItem">
-      <span class="productPanelProp">{productProp[0]} </span>: {productProp[1]}
+  const productProps = productPropsData.map((productProp, index) => (
+    <p key={index}  className="productPropItem">
+      <span className="productPanelProp">{productProp[0]} </span>:{" "}
+      {productProp[1]}
     </p>
   ));
 
@@ -34,8 +35,10 @@ export default function SectionProductPanel() {
       <section className="standardSection productSection">
         <div className="productPanel">
           <div className="imgPanel">
-            <div className="leftPanel">{files}</div>
-            <div className="rightPanel">
+            <div  className="leftPanel">
+              {files}
+            </div>
+            <div  className="rightPanel">
               <Image src={selectImage}></Image>
             </div>
           </div>

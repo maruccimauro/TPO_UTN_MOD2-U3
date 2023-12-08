@@ -5,8 +5,8 @@ import { SectionRegisterFormDataFields } from "../../Data/SectionRegisterFormDat
 export default function SectionRegisterForm(){
  const dataFields = SectionRegisterFormDataFields;
 
-  let fields = dataFields.map((field) => (
-    <StandarFieldForm field={field}></StandarFieldForm>
+  let fields = dataFields.map((field,index) => (
+    <StandarFieldForm key={index} field={field}></StandarFieldForm>
   ));
 
   return (

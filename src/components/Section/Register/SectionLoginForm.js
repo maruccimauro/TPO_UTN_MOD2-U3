@@ -4,8 +4,8 @@ import { SectionLoginFormDataFields } from "../../Data/SectionLoginFormDataField
 export default function SectionLoginForm() {
   const dataFields = SectionLoginFormDataFields;
 
-  let fields = dataFields.map((field) => (
-    <StandarFieldForm field={field}></StandarFieldForm>
+  let fields = dataFields.map((field,index) => (
+    <StandarFieldForm key={index} field={field}></StandarFieldForm>
   ));
 
   return (
