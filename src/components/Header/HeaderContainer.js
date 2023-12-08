@@ -2,6 +2,9 @@ import {Fragment } from "react"
 import HeaderRow from "./HeaderRow";
 import CatergoryListSelect from "./CategoryListSelect";
 import HeaderNav from "./HeaderNav";
+import Image from "../General/Image";
+
+
 export default function HeaderContainer ({children}){
     return (
       <Fragment>
@@ -10,17 +13,19 @@ export default function HeaderContainer ({children}){
             <div className="leftPanel">
               <a href=" #">
                 <div className="item">
-                  <img
+                  <Image
                     alt="Logo"
-                    src="images/amazon.png"
+                    src="header/amazon.png"
                     className="headerLogo"
-                  ></img>
+                  ></Image>
                 </div>
               </a>
               <a href=" #">
                 <div className="item">
                   <div className="deliveryLeft">
-                    <span className="material-symbols-outlined">location_on</span>
+                    <span className="material-symbols-outlined">
+                      location_on
+                    </span>
                   </div>
                   <div className="deliveryRight">
                     <p>Envios a </p>
@@ -33,17 +38,20 @@ export default function HeaderContainer ({children}){
               <div className="navSearch">
                 <div className="searchFilterConteiner">
                   <select className="searchFilterSelect">
-                      <CatergoryListSelect></CatergoryListSelect>
+                    <CatergoryListSelect></CatergoryListSelect>
                   </select>
                 </div>
                 <div className="searchBoxContainer">
-                  <input className="searchBox" type="box" placeholder="Ingrese algun producto a buscar"></input>
+                  <input
+                    className="searchBox"
+                    type="box"
+                    placeholder="Ingrese algun producto a buscar"
+                  ></input>
                 </div>
                 <div className="searchButton"></div>
               </div>
             </div>
-            <div className="RightPanel">
-            </div>
+            <div className="RightPanel"></div>
           </HeaderRow>
           <HeaderRow styles={["headerRow-Middle"]}>
             <HeaderNav></HeaderNav>

@@ -11,13 +11,13 @@ export default function SectionRegisterForm(){
 
   return (
     <Fragment>
-      <div className="standardSection">
+      <section className="standardSection">
         <form className="form" name="miform" action="" method="post">
           <h1>¡Registrate ahora!</h1>
           {fields}
           <input type="submit" value="ENVIAR" className="submit" />
         </form>
-      </div>
+      </section>
     </Fragment>
   );
 }
