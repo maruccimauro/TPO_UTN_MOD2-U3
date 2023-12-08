@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TPO_UTN_MOD2_U3/static/css/main.3cd6986d.css",
-    "main.js": "/TPO_UTN_MOD2_U3/static/js/main.4f6371ea.js",
+    "main.js": "/TPO_UTN_MOD2_U3/static/js/main.d8595146.js",
     "static/js/787.d4aba7ab.chunk.js": "/TPO_UTN_MOD2_U3/static/js/787.d4aba7ab.chunk.js",
     "static/media/product1_2.jpg": "/TPO_UTN_MOD2_U3/static/media/product1_2.8dd9cc6bab002d5ee35d.jpg",
     "static/media/fondo.jpg": "/TPO_UTN_MOD2_U3/static/media/fondo.1842e730a40ac700066d.jpg",
@@ -9,11 +9,11 @@
     "static/media/product1_3.jpg": "/TPO_UTN_MOD2_U3/static/media/product1_3.8791e06a6e3597fae58b.jpg",
     "index.html": "/TPO_UTN_MOD2_U3/index.html",
     "main.3cd6986d.css.map": "/TPO_UTN_MOD2_U3/static/css/main.3cd6986d.css.map",
-    "main.4f6371ea.js.map": "/TPO_UTN_MOD2_U3/static/js/main.4f6371ea.js.map",
+    "main.d8595146.js.map": "/TPO_UTN_MOD2_U3/static/js/main.d8595146.js.map",
     "787.d4aba7ab.chunk.js.map": "/TPO_UTN_MOD2_U3/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cd6986d.css",
-    "static/js/main.4f6371ea.js"
+    "static/js/main.d8595146.js"
   ]
 }
